@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/cerulean-bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="elixirtech.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>ConnecSync</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body>
+      <div class="top-container">
+        <div class="container">
+          <!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">ConnecSync</a>
+  </div>
+  
+</div>
+
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script src="lib/jquery.fileDownload.js"></script>
+<script>
+$.fileDownload('./graphics/Angie.vcf')
+.done(function(){window.location = "thankyou.html";})
+ .fail(function(){console.info("fail")});
+</script>
+<!--iframe width="1" height="1" frameborder="0" src="./graphics/Angie.vcf"></iframe-->
+<p>Thank You for Using ConnecSync!</p>
+<p>You may now use the QR Code below to connect with people!</p>
+<p><img align="middle" src="./graphics/qrcode.png" width="100px" height="100px"></p>
+<form>
+   
+		<p>You may know Angie in other social circles:</p>
+		<div class="checkbox">
+  			<label>
+    			<input type="checkbox" value="" checked >
+    			Outlook
+  			</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		Gmail
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		Apple Mail
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked >
+	    		Thunderbird
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value=""checked >
+	    		Others
+	  		</label>
+		</div> 
+    <button type="submit" id="sync" class="btn btn-primary">Request</button>
+</form>
+
+          <div class="copyright visible-xs visible-sm">
+  <p>Copyright &#169; ConnecSync 2014.<br>All Rights Reserved.</p>
+  <p>
+    <a href="" target="_blank">Terms of Service</a><br>
+    <a href="" target="_blank">Privacy Policy</a>
+  </p>
+</div>
+
+        </div>
+      </div>
+      <script src="lib/jquery-1.10.2.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

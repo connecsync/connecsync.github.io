@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/cerulean-bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="elixirtech.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>ConnecSync</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body>
+      <div class="top-container">
+        <div class="container">
+          <!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">ConnecSync</a>
+  </div>
+  
+</div>
+
+<script src="lib/jquery-1.10.2.min.js"></script>
+<script>
+  $.ajax({
+    url: "./graphics/Angie.vcf",
+    headers: {"Content-Type":"text/x-vcard"}
+  })
+</script>
+<table class="table-responsive">
+    <tbody>
+        <tr>
+        	<td rowspan="4"><img class="img-responsive" src="./graphics/angie_cv_photo.png"></td>
+            <td>Email: angie@connecsync.com</td>
+        </tr>
+        <tr>
+            <td>Mobile: +65 9455 3237</td>
+        </tr>
+        <tr>
+            <td>Office: +65 6532 4300</td>
+        </tr>
+        <tr>
+            <td>Fax: +65 6532 4255</td>
+        </tr>
+    </tbody>
+</table>
+<p>Share to: </p>
+<p>Phone Book: </p>
+<form method="get" action="thankyou.html" target="_blank">
+    <div class="form-group">
+    	<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="ios" value="option1" checked>
+    		iOS
+  			</label>
+		</div>
+		<div class="radio">
+  		<label>
+    		<input type="radio" name="optionsRadios" id="android" value="option2">
+    		Android
+  		</label>
+		</div>
+		<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="blackberry" value="option3">
+    		BlackBerry
+  			</label>
+		</div>
+		<div class="radio">
+  			<label>
+    		<input type="radio" name="optionsRadios" id="windows" value="option3">
+    		Windows
+  			</label>
+		</div>
+		<p>Email Address Book:</p>
+		<div class="checkbox">
+  			<label>
+    			<input type="checkbox" value="" checked disabled>
+    			Outlook
+    			<input type="text" disabled>
+  			</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked disabled>
+	    		Gmail
+	    		<input type="text" disabled>
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked disabled>
+	    		Apple Mail
+	    		<input type="text" disabled>
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value="" checked disabled>
+	    		Thunderbird
+	    		<input type="text" disabled>
+	  		</label>
+		</div>
+		<div class="checkbox">
+	  		<label>
+	    		<input type="checkbox" value=""checked disabled>
+	    		Others
+	    		<input type="text" disabled>
+	  		</label>
+		</div>
+    </div>
+   
+    <button type="submit" id="sync" class="btn btn-primary">Sync</button>
+</form>
+
+          <div class="copyright visible-xs visible-sm">
+  <p>Copyright &#169; ConnecSync 2014.<br>All Rights Reserved.</p>
+  <p>
+    <a href="" target="_blank">Terms of Service</a><br>
+    <a href="" target="_blank">Privacy Policy</a>
+  </p>
+</div>
+
+        </div>
+      </div>
+      <script src="lib/jquery-1.10.2.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
