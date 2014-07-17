@@ -26,7 +26,6 @@
 <script src="lib/jquery-1.10.2.min.js"></script>
 <script>
   $.ajax({
-    url: "./graphics/Angie.vcf",
     headers: {"Content-Type":"text/x-vcard"}
   })
 </script>
@@ -49,7 +48,7 @@
 </table>
 <p>Share to: </p>
 <p>Phone Book: </p>
-<form method="get" action="thankyou.html" target="_blank">
+<form action="thankyou.html">
     <div class="form-group">
     	<div class="radio">
   			<label>
@@ -85,23 +84,23 @@
 		</div>
 		<div class="checkbox">
 	  		<label>
-	    		<input type="checkbox" value="" checked disabled>
+	    		<input type="checkbox" value="" checked>
 	    		Gmail
-	    		<input type="text" disabled>
+	    		<input type="text">
 	  		</label>
 		</div>
 		<div class="checkbox">
 	  		<label>
-	    		<input type="checkbox" value="" checked disabled>
+	    		<input type="checkbox" value="" checked>
 	    		Apple Mail
-	    		<input type="text" disabled>
+	    		<input type="text">
 	  		</label>
 		</div>
 		<div class="checkbox">
 	  		<label>
-	    		<input type="checkbox" value="" checked disabled>
+	    		<input type="checkbox" value="">
 	    		Thunderbird
-	    		<input type="text" disabled>
+	    		<input type="text">
 	  		</label>
 		</div>
 		<div class="checkbox">
@@ -113,7 +112,7 @@
 		</div>
     </div>
    
-    <button type="submit" id="sync" class="btn btn-primary">Sync</button>
+    <button type="submit" id="sync" class="btn btn-primary">Next</button>
 </form>
 
           <div class="copyright visible-xs visible-sm">

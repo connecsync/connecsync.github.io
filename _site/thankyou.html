@@ -24,13 +24,24 @@
 </div>
 
 <script src="lib/jquery-1.10.2.min.js"></script>
-<script src="lib/jquery.fileDownload.js"></script>
+<!--script src="lib/jquery.fileDownload.js"></script>
 <script>
 $.fileDownload('./graphics/Angie.vcf')
 .done(function(){window.location = "thankyou.html";})
  .fail(function(){console.info("fail")});
-</script>
+</script-->
 <!--iframe width="1" height="1" frameborder="0" src="./graphics/Angie.vcf"></iframe-->
+<script>
+$(document).ready(function(){
+	$( "#request" ).click(function(e) {
+	  //alert( "request" );
+	  $("#msg").text("Request sent");
+	});
+	$( "#sync" ).click(function() {
+	  window.location = "./graphics/Angie.vcf"
+	});
+});
+</script>
 <p>Thank You for Using ConnecSync!</p>
 <p>You may now use the QR Code below to connect with people!</p>
 <p><img align="middle" src="./graphics/qrcode.png" width="100px" height="100px"></p>
@@ -40,35 +51,33 @@ $.fileDownload('./graphics/Angie.vcf')
 		<div class="checkbox">
   			<label>
     			<input type="checkbox" value="" checked >
-    			Outlook
+    			Elixir
   			</label>
 		</div>
 		<div class="checkbox">
 	  		<label>
 	    		<input type="checkbox" value="" checked >
-	    		Gmail
+	    		Friend
 	  		</label>
 		</div>
 		<div class="checkbox">
 	  		<label>
 	    		<input type="checkbox" value="" checked >
-	    		Apple Mail
+	    		School
 	  		</label>
 		</div>
 		<div class="checkbox">
 	  		<label>
 	    		<input type="checkbox" value="" checked >
-	    		Thunderbird
+	    		Family
 	  		</label>
 		</div>
-		<div class="checkbox">
-	  		<label>
-	    		<input type="checkbox" value=""checked >
-	    		Others
-	  		</label>
-		</div> 
-    <button type="submit" id="sync" class="btn btn-primary">Request</button>
+		
+			<button type="button" id="request" class="btn btn-primary">Request</button><p style="display:inline" id="msg"></p>
+		
 </form>
+<br>
+<button type="button" id="sync" class="btn btn-primary">Sync Contact</button>
 
           <div class="copyright visible-xs visible-sm">
   <p>Copyright &#169; ConnecSync 2014.<br>All Rights Reserved.</p>
